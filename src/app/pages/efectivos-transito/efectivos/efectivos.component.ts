@@ -406,9 +406,9 @@ private isAdd(): boolean {
           console.log(this.idefecttest);
           } );
 
-          this.feriasService.findByIdEfect(idagente).subscribe(
+          this.feriasService.findById(idagente).subscribe(
             (data: any) => {
-              console.log(data.details[0]);
+              console.log(data.details);
               //this.danger = true;
               this.ideferiaAgente= data.details[0];
               console.log(this.ideferiaAgente);

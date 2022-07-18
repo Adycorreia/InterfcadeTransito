@@ -27,7 +27,7 @@ import { DefaultService } from "./default.service";
       }
 
     findByIdEfect(id: Number): Observable<ResponseApp<Ferias>> {
-      return this.http.get<ResponseApp<Ferias>>(`${this.url}/idferia/${id}`);
+      return this.http.get<ResponseApp<Ferias>>(`${this.url}/${id}`);
     }
 
       

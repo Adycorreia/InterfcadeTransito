@@ -1,5 +1,4 @@
-import { LocalData } from "ng2-completer";
-import { Efectivos } from "./efectivos";
+
 
 export interface Armamento {
     idarma: number;
