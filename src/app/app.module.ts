@@ -20,6 +20,7 @@ import { CoreModule } from './@core/core.module';
 import { ThemeModule } from './@theme/theme.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AuthModule } from './auth/auth.module';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { AppRoutingModule } from './app-routing.module';
     ThemeModule.forRoot(),
     NbDatepickerModule.forRoot(),
     NbToastrModule.forRoot(),
+    AuthModule,
    
   ],
   bootstrap: [AppComponent],

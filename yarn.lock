@@ -191,7 +191,7 @@
     "universal-analytics" "0.4.23"
     "uuid" "8.3.0"
 
-"@angular/common@^10.0.0", "@angular/common@^10.0.0 || ^11.0.0-0", "@angular/common@^10.0.10", "@angular/common@>= 6.0.0", "@angular/common@>=10.0.0", "@angular/common@10.2.4":
+"@angular/common@^10.0.0", "@angular/common@^10.0.0 || ^11.0.0-0", "@angular/common@^10.0.10", "@angular/common@^7.0.0", "@angular/common@>= 6.0.0", "@angular/common@>=10.0.0", "@angular/common@10.2.4":
   "integrity" "sha512-bBfsLJNDQaC2OI1mReDJuSZ/uBb7Pf3HVpRmlQKNIPllIxqX1hLH8I3Plodrns9m32JMJ6FMsQthcP0KMdRCJA=="
   "resolved" "https://registry.npmjs.org/@angular/common/-/common-10.2.4.tgz"
   "version" "10.2.4"
@@ -224,14 +224,14 @@
   dependencies:
     "tslib" "^2.0.0"
 
-"@angular/core@^10.0.0", "@angular/core@^10.0.0 || ^11.0.0-0", "@angular/core@^10.0.10", "@angular/core@>= 6.0.0", "@angular/core@>=10.0.0", "@angular/core@10.2.4":
+"@angular/core@^10.0.0", "@angular/core@^10.0.0 || ^11.0.0-0", "@angular/core@^10.0.10", "@angular/core@^7.0.0", "@angular/core@>= 6.0.0", "@angular/core@>=10.0.0", "@angular/core@10.2.4":
   "integrity" "sha512-5xpAvmZwD9nZ8eWx10urjibqEeePGEiFXVMEn3IaJWgfdOcMmeSoioW9JUllT3w85+DlNVWbRbhz0YfE9a4jyw=="
   "resolved" "https://registry.npmjs.org/@angular/core/-/core-10.2.4.tgz"
   "version" "10.2.4"
   dependencies:
     "tslib" "^2.0.0"
 
-"@angular/forms@^10.0.0", "@angular/forms@^10.0.10", "@angular/forms@>= 6.0.0":
+"@angular/forms@^10.0.0", "@angular/forms@^10.0.10", "@angular/forms@^7.0.0", "@angular/forms@>= 6.0.0":
   "integrity" "sha512-nrag/3+sjclH5mYqgM9UKzjotMGDCYBlPMqLt2Mj8rIxtAPRxfKmzAhxf4lRw3RTzMvOLM0rBRJagpi5glyLEw=="
   "resolved" "https://registry.npmjs.org/@angular/forms/-/forms-10.2.4.tgz"
   "version" "10.2.4"
@@ -1107,6 +1107,11 @@
   "resolved" "https://registry.npmjs.org/@nebular/auth/-/auth-6.0.0.tgz"
   "version" "6.0.0"
 
+"@nebular/bootstrap@3.0.0":
+  "integrity" "sha512-O2NIVP7cfJ6ioQdKfGroxDpnP2T0p7jrmj1R1PX4z5m9LTbUJq366vtqg2pE26F3q2zlKpqAvXGd1P1yv7dpkw=="
+  "resolved" "https://registry.npmjs.org/@nebular/bootstrap/-/bootstrap-3.0.0.tgz"
+  "version" "3.0.0"
+
 "@nebular/eva-icons@^6.0.0":
   "integrity" "sha512-uxN+DV9OQBupvFzai3amufmZZ8YxlkXYotSf/VCW1+gxaCy+p/eRV/8aSwU3KtMKzCld3bTTVCikh274m4XRIQ=="
   "resolved" "https://registry.npmjs.org/@nebular/eva-icons/-/eva-icons-6.0.0.tgz"
@@ -1117,12 +1122,19 @@
   "resolved" "https://registry.npmjs.org/@nebular/security/-/security-6.0.0.tgz"
   "version" "6.0.0"
 
-"@nebular/theme@6.0.0":
+"@nebular/theme@3.0.0", "@nebular/theme@6.0.0":
   "integrity" "sha512-1yq0PHRrAX9LufOzsecZX/CfBWUYJxZkaCP1eO7LjZ92OHiHHzigWG/hHjz3GU/gzpxRUn/6BUQYrJiens3kJg=="
   "resolved" "https://registry.npmjs.org/@nebular/theme/-/theme-6.0.0.tgz"
   "version" "6.0.0"
   dependencies:
     "intersection-observer" "0.7.0"
+
+"@ng-bootstrap/ng-bootstrap@^4.0.0":
+  "integrity" "sha512-v8QmC17bv9he5Ep6zutaI9aQ2w/2NqySP0fejOKe7cacKpGUqsLIakpyd2FD7mfZu7pSCCtHYpRWR+h6yq+Ngg=="
+  "resolved" "https://registry.npmjs.org/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.2.2.tgz"
+  "version" "4.2.2"
+  dependencies:
+    "tslib" "^1.9.0"
 
 "@ngtools/webpack@10.0.8":
   "integrity" "sha512-Qv4v7O4VGeWuXjRThd/mdC2I4cJOgQ7kDrVN7vkDB2EW5xtRB+/4hghvFeO3bD11FLuFvCxBMb0HbwyKoVQgEQ=="
@@ -2175,7 +2187,7 @@
   "resolved" "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
 
-"bootstrap@4.3.1":
+"bootstrap@^4.0.0", "bootstrap@4.3.1":
   "integrity" "sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag=="
   "resolved" "https://registry.npmjs.org/bootstrap/-/bootstrap-4.3.1.tgz"
   "version" "4.3.1"
@@ -9910,7 +9922,7 @@
   "resolved" "https://registry.npmjs.org/rxjs-compat/-/rxjs-compat-6.3.0.tgz"
   "version" "6.3.0"
 
-"rxjs@^6.5.1", "rxjs@^6.5.3", "rxjs@^6.5.4", "rxjs@^6.6.0", "rxjs@6.6.2":
+"rxjs@^6.3.0", "rxjs@^6.5.1", "rxjs@^6.5.3", "rxjs@^6.5.4", "rxjs@^6.6.0", "rxjs@6.6.2":
   "integrity" "sha512-BHdBMVoWC2sL26w//BCu3YzKT4s2jip/WhwsGEDmeKYBhKDZeYezVUnHatYB7L85v5xs0BAQmg6BEYJEKxBabg=="
   "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-6.6.2.tgz"
   "version" "6.6.2"
