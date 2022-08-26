@@ -12,6 +12,8 @@ import { AprecapComponent } from './apreensão/apre-cap/apre-cap.component';
 import { EfectivosComponent } from './efectivos-transito/efectivos/efectivos.component';
 import { ArmamentoComponent } from './efectivos-transito/armamento/armamento.component';
 import { FeriasComponent } from './efectivos-transito/ferias/ferias.component';
+import { LoginComponent } from 'app/auth/component/login/login.component';
+
 
 
 const routes: Routes = [{
@@ -22,6 +24,12 @@ const routes: Routes = [{
       path: '',
       component: DefaultComponent,
     },
+
+    {
+      path: "auth",
+      component: LoginComponent,
+    },
+
     {
       path: 'default',
       component: DefaultComponent,

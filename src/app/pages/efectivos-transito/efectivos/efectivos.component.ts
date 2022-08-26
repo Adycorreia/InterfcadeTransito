@@ -390,7 +390,7 @@ private isAdd(): boolean {
   }
   
   idefecttest:String;
-  ideferiaAgente:String
+  ideferiaAgente:String;
 
   public onEfectSelect($event){
     console.log($event);
@@ -406,11 +406,11 @@ private isAdd(): boolean {
           console.log(this.idefecttest);
           } );
 
-          this.feriasService.findById(idagente).subscribe(
+          this.feriasService.findByIdEfect(idagente).subscribe(
             (data: any) => {
               console.log(data.details);
               //this.danger = true;
-              this.ideferiaAgente= data.details[0];
+              this.ideferiaAgente= data.details;
               console.log(this.ideferiaAgente);
               } );
     };

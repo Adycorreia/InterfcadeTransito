@@ -14,33 +14,33 @@ import { DefaultService } from "./default.service";
   export class FeriasService extends DefaultService {
   
     constructor(private http: HttpClient) { 
-     super('listeFerias')
+     super('ferias')
     }
   
   
     getListFerias() {
-      return this.http.get<ResponseApp<Ferias[]>>(`${this.url}`);
+      return this.http.get<ResponseApp<Ferias[]>>(`${this.url}/list`);
       }
   
       findById(id: Number): Observable<ResponseApp<Ferias>> {
-        return this.http.get<ResponseApp<Ferias>>(`${this.url}/id/${id}`);
+        return this.http.get<ResponseApp<Ferias>>(`${this.url}/listById/${id}`);
       }
 
     findByIdEfect(id: Number): Observable<ResponseApp<Ferias>> {
-      return this.http.get<ResponseApp<Ferias>>(`${this.url}/${id}`);
+      return this.http.get<ResponseApp<Ferias>>(`${this.url}/listByIdAgente/${id}`);
     }
 
       
     create(ferias: Ferias): Observable<ResponseApp<Ferias>> {
-      return this.http.post<ResponseApp<Ferias>>(this.url, ferias);
+      return this.http.post<ResponseApp<Ferias>>(`${this.url}/save`, ferias);
     }
 
     delete(id: Number): Observable<ResponseApp<Ferias>> {
-      return this.http.delete<ResponseApp<Ferias>>(`${this.url}/${id}`);
+      return this.http.delete<ResponseApp<Ferias>>(`${this.url}/delete/${id}`);
     }
 
     edit(ferias: Ferias): Observable<ResponseApp<Ferias>> {
-      return this.http.put<ResponseApp<Ferias>>(`${this.url}/${ferias.idferia}`, ferias);
+      return this.http.put<ResponseApp<Ferias>>(`${this.url}/update/${ferias.idferia}`, ferias);
     }
   
   
